@@ -78,6 +78,10 @@ footer{
     .board{
         width: 100%;
     }
+    .button{
+      width:100%;
+      height:100vh;
+    }
      
    }
    @media (min-height: 1000px ){
@@ -91,6 +95,10 @@ footer{
     }
     .board{
         width: 100%;
+    } 
+    .button{
+        width:100%;
+      height:100vh;
     }
      
    }
