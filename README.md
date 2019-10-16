@@ -38,7 +38,7 @@
 
 ## future Work :
 
-* Add an AI opponent.
+* Add an AI opponent.:thought_balloon:
 
 
 
