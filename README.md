@@ -10,8 +10,7 @@
 5- Sweetalert library 
 
 ## Wireframe:
-* [wireframe tic tac toe]
-(https://wireframe.cc/pro/pp/2aa30ef32282186)
+* [wireframe tic tac toe](https://wireframe.cc/pro/pp/2aa30ef32282186)
 
 ## User Stories:
 * As a user, I should be able to click on a square to add X first and then O, and so on
@@ -34,8 +33,7 @@
 
 
 ## Tic Tac Toe Game :
-* [Here you can play the game]
-(https://dalia-a.github.io/project1/)
+* [Here you can play the game](https://dalia-a.github.io/project1/)
 
 
 ## future Work :
