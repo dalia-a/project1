@@ -33,7 +33,7 @@
 
 
 ## Tic Tac Toe Game :
-* [Here you can play the game](https://dalia-a.github.io/project1/) /play greatjob
+* [Here you can play the game](https://dalia-a.github.io/project1/) :smirk:
 
 
 ## future Work :
