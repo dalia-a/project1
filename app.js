@@ -45,7 +45,7 @@ $('.box').on('click', play);
 const checkWinner = function () {
     // min move to get winner is 5 and i put condition 
     if (counter > 5) {
-     // 8 posibiltes 
+     // 8 posibilites 
         if (boxs[0] === boxs[1] && boxs[1] === boxs[2] && boxs[0] !== "") {
             $('.turn').text('Player ' + boxs[0] + ' Wins');
             console.log('Player ' + boxs[0] + ' Wins');
@@ -54,7 +54,7 @@ const checkWinner = function () {
            //store winner
             isWin[1]=boxs[0];
             //change color of winner
-            $('#0').css('color', '##61DDD7') ; $('#1').css('color', '#61DDD7') ;$('#2').css('color', '#61DDD7');
+            $('#0').css('color', '#61DDD7') ; $('#1').css('color', '#61DDD7') ;$('#2').css('color', '#61DDD7');
             //prevent to chosse any box and put a symbol
             $('.box').off('click');
         } else if (boxs[3] === boxs[4] && boxs[4] === boxs[5] && boxs[3] !== "") {
