@@ -1,5 +1,4 @@
-//to store the moves in an array
-
+//store the moves in an array
 let boxs = ['', '', '', '', '', '', '', '', ''];
 let playerX = 'X';
 let playerO = 'O';
@@ -143,7 +142,7 @@ const reset = function () {
     // isWin = [false, ""];
     // console.log('Reset to new game');
 
-    // $('#3').css('color', '#61DDD7') ; $('#4').css('color', '#61DDD7') ;$('#5').css('color', '#61DDD7');  
+    // $('#3').css('color', '#61DDD7') ; $('#4').css('color', '#61DDD7') ;$('#5').css('color', '#61DDD7');   for change the color but i brefer th chosse below method
 
     location.reload();
 
