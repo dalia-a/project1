@@ -9,11 +9,16 @@ let isWin = [false, ""];
 let scoreT= 0;
 
 const play = function (event) {
+   //if the counter odd = playerx , counter even =player o 
     if (player == true && counter % 2 === 1) {
+        //take place from id
         const position = $(event.target).attr('id');
         boxs[position] = playerX
+       //change the text in box with player value x or o symbol
         $(event.target).text(playerX);
+       // show who turn now 
         $('.turn').text('Player X turn');
+        // fot test it on console
         console.log('Player X played');
     } else if (player == false && counter % 2 === 0) {
         const position = $(event.target).attr('id');
@@ -30,20 +35,28 @@ const play = function (event) {
     }
     console.log(counter);
     counter++
+    // do not allow to choose the same box twice
     $(event.target).off('click');
+    // check winner function
     checkWinner();
 }
 $('.box').on('click', play);
 
 
 const checkWinner = function () {
+    // min move to get winner is 5 and i put condition 
     if (counter > 5) {
-      if (boxs[0] === boxs[1] && boxs[1] === boxs[2] && boxs[0] !== "") {
+     // 8 posibiltes 
+        if (boxs[0] === boxs[1] && boxs[1] === boxs[2] && boxs[0] !== "") {
             $('.turn').text('Player ' + boxs[0] + ' Wins');
             console.log('Player ' + boxs[0] + ' Wins');
+            // if there is match same symbol
             isWin[0] = true;
-            isWin[1]=boxs[0]
+           //store winner
+            isWin[1]=boxs[0];
+            //change color of winner
             $('#0').css('color', '##61DDD7') ; $('#1').css('color', '#61DDD7') ;$('#2').css('color', '#61DDD7');
+            //prevent to chosse any box and put a symbol
             $('.box').off('click');
         } else if (boxs[3] === boxs[4] && boxs[4] === boxs[5] && boxs[3] !== "") {
             $('.turn').text('Player ' + boxs[3] + ' Wins');
